@@ -10,7 +10,7 @@ In a nutshell, each DAO is composed of 3 interconnecting components:
 
 1. The DAO contract: The DAO contract is where the core functionality of the DAO lies. It is the contract in charge of:
 
-- Representing the identity and metadata of the DAO (ENS name, logo, description, other metadata)
+- Representing the identity and metadata of the DAO (Stark name, logo, description, other metadata)
 - Holding and managing the treasury assets
 - Executing arbitrary actions to:
   - transfer assets
