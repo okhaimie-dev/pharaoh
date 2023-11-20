@@ -57,7 +57,7 @@ export function Hero() {
               </p>
               <p className="mt-3 text-2xl tracking-tight text-slate-400">
                 Pharaoh is inspired by Aragon OSx to enable robust community
-                governance on-chain.
+                governance on Starknet.
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
                 <Button href="/docs/architecture-guide">

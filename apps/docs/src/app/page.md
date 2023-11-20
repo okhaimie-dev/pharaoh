@@ -6,11 +6,11 @@ This section provides an overview of the key components that make up Pharaoh's p
 
 {% quick-links %}
 
-{% quick-link title="Architecture guide" icon="presets" href="/" description="Learn how the internals work and contribute." /%}
+{% quick-link title="Core concepts" icon="theming" href="/" description="Feature highlights and essential components." /%}
 
 {% quick-link title="Plugins" icon="plugins" href="/" description="Customize your organization's capabilities by installing modular plugins." /%}
 
-{% quick-link title="Core concepts" icon="theming" href="/" description="Feature highlights and essential components." /%}
+{% quick-link title="Architecture guide" icon="presets" href="/" description="Learn how the internals work and contribute." /%}
 
 {% /quick-links %}
 
