@@ -17,3 +17,5 @@ This Turborepo include the following packages/apps:
 ## Development
 
 Pharaoh is under active development.
+
+![Pharaoh Contract Architecture](./assets/architecture.png)
