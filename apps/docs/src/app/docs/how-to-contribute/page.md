@@ -26,7 +26,7 @@ Once you've found an issue to work on, the next step is to fork the Orion repo a
 
 When you're ready to start coding, create a new branch on your cloned repo. It's important to use a separate branch for each issue you're working on. This keeps your changes separate in case you want to submit more than one contribution.
 
-Please use meaningful names for your branches. For example, if you're working on an issue with the dao contract, you might name your branch `fix-contract-bug`.
+Please use meaningful names for your branches. For example, if you're working on an issue with the dao contract, you might name your branch `fix-dao-bug`.
 
 As you're making changes, make sure you follow the coding conventions used throughout the Pharaoh project. Consistent code style makes it easier for others to read and understand your code.
 
