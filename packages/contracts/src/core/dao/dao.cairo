@@ -3,7 +3,12 @@ use starknet::ContractAddress;
 #[starknet::interface]
 trait IDAO<TContractState> {
     fn increase_balance(ref self: TContractState, amount: felt252);
-    fn set_trusted_forwarder(ref self: TContractState, new_trusted_forwarder: ContractAddress) -> ContractAddress;
+    fn has_permission(self: @TContractState, where: ContractAddress, who: ContractAddress, permission_id: felt252, data: felt252) -> bool;
+    fn set_metadata(ref self: TContractState, metadata: felt252);
+    fn execute(ref self: TContractState, call_id: felt252, allow_failure_map: u256) -> felt252;
+    fn set_trusted_forwarder(ref self: TContractState, new_trusted_forwarder: ContractAddress);
+    fn get_trusted_forwarder(self: @TContractState) -> ContractAddress;
+    fn is_valid_signature(self: @TContractState, signature: felt252, hash: felt252) -> felt252;
     fn set_dao_uri(ref self: TContractState, new_dao_uri: felt252);
     fn dao_uri(self: @TContractState) -> felt252;
 } 
@@ -29,6 +34,14 @@ mod DAO {
     #[key]
     address: ContractAddress,
     name: felt252,
+  }
+
+  #[derive(Drop, starknet::Event)]
+  struct Action {
+    #[key]
+    to: ContractAddress,
+    value: u256,
+    data: felt252,
   }
 
   #[external(v0)]
